@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assignment-03-12460842.css">
+  <title>Student Grades Table</title>
+</head>
+<body>
+  <table class="table">
+
+    <!-- Table heading with highlightCol method being called onclick. The function is passed the column -->
+
+    <thead>
+      <tr class="headings">
+        <th class="clickable" onclick="highlightCol(this)">Name</th>
+        <th class="clickable" onclick="highlightCol(this)">ID</th>
+        <th class="clickable" onclick="highlightCol(this)">Assignment 1</th>
+        <th class="clickable" onclick="highlightCol(this)">Assignment 2</th>
+        <th class="clickable" onclick="highlightCol(this)">Assignment 3</th>
+        <th class="clickable" onclick="highlightCol(this)">Assignment 4</th>
+        <th class="clickable" onclick="highlightCol(this)">Assignment 5</th>
+        <th class="avg clickable">Average [%]</th>
+      </tr>
+
+    </thead>
+      
+
+    <tbody>
+
+      <!-- Each row is the same. The contenteditable attribute makes the row clickable and editable. The Student Name cell also calls the hgihlightRow function and passes in the current row -->
+
+      <tr class="rows" >
+        <td id="name" class="name clickable" onclick="highlightRow(this)" >John Smith</td>
+        <td id="id" class="studentID">12365782</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="average-result">-</td>
+        
+      </tr>
+      <tr class="rows">
+        <td id="name" class="name clickable" onclick="highlightRow(this)">Jill Keating</td>
+        <td id="id" class="studentID">34543263</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="average-result">-</td>
+        
+      </tr>
+      <tr class="rows">
+        <td id="name" class="name clickable" onclick="highlightRow(this)">Frank Jones</td>
+        <td id="id" class="studentID">23145436</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="average-result">-</td>
+        
+      </tr>
+      <tr class="rows">
+        <td id="name" class="name clickable" onclick="highlightRow(this)">Deoborah Gilligan</td>
+        <td id="id" class="studentID">12398765</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="average-result">-</td>
+        
+      </tr>
+      <tr class="rows">
+        <td id="name" class="name clickable" onclick="highlightRow(this)">Joe Murphy</td>
+        <td id="id" class="studentID">34256543</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="average-result">-</td>
+        
+      </tr>
+      <tr class="rows">
+        <td id="name" class="name clickable" onclick="highlightRow(this)">Jenna Larson</td>
+        <td id="id" class="studentID">32454321</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="average-result">-</td>
+        
+      </tr>
+      <tr class="rows">
+        <td id="name" class="name clickable" onclick="highlightRow(this)">Ciaran McGill</td>
+        <td id="id" class="studentID">12543543</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="average-result">-</td>
+        
+      </tr>
+      <tr class="rows">
+        <td id="name" class="name clickable" onclick="highlightRow(this)">Seamus McCarthy</td>
+        <td id="id" class="studentID">23231454</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="average-result">-</td>
+        
+      </tr>
+      <tr class="rows">
+        <td id="name" class="name clickable" onclick="highlightRow(this)">Dora Shelly</td>
+        <td id="id" class="studentID">54321233</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="average-result">-</td>
+        
+      </tr>
+
+      <tr class="rows">
+        <td id="name" class="name clickable" onclick="highlightRow(this)">Mary Jones</td>
+        <td id="id" class="studentID">54321233</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="results" contenteditable='true'>-</td>
+        <td class="average-result">-</td>
+      
+      </tr>
+    </tbody>
+  </table>
+
+<!-- This div holds the student name and id inputs. It also contains the buttons for adding a row and a column -->
+
+<div class="assignAddRow">
+  <span class="notSubmitted">
+    Assignments not submitted: <span id="assign"> 0 </span>
+  </span>
+  <span class="newRow">
+    Student Name: &nbsp;<input type="text" class="studentName" placeholder="Please enter your name...."></input> 
+    &nbsp;
+    Student Number: &nbsp;<input type="text" class="studentid" placeholder="Please enter your ID...."></input> &nbsp;&nbsp;
+    <button class="addRow">Add Row</button>
+  </span>
+  <button class="addCol">Add assignment</button>
+</div>
+  
+  
+  
+  <script src="assignment-03-12460842.js"></script>
+</body>
+</html>
